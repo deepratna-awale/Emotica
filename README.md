@@ -25,7 +25,7 @@ Emotica (formerly AutoExpress) repaints a character's face with 28 different emo
 - **Retry one expression.** Make a single expression again with a new seed, or with its own prompt, intensity and settings, and save those with the character for every later run.
 - **Two ways to edit.** Face inpainting uses ADetailer or FaceDetailer. Instruction editing uses Qwen-Image-Edit on ComfyUI, which also works on photos.
 - **Animated sprites.** Every expression can become a seamless looping animation that keeps playing for as long as it's shown (Wan 2.2 image to video on ComfyUI), transparent if you like, with an idle animation written from the character card. [Examples](#animated-sprites).
-- **Live2D models from pictures.** A ready-to-play puppet for the SillyTavern Live2D extension, and a layered PSD to rig a full Live2D model in Cubism Editor. The puppet blinks, breathes, turns its head with depth, follows the cursor and plays the 28 expressions, gliding from one to the next, and reacts to touch (a boop on the nose, a pat on the head). Its mouth has separate teeth and tongue for 15 TTS visemes. Its hair, skirts and ribbons sway, and the bust and hips jiggle. You can drag hair, clothes and soft parts with the mouse or poke them. Layers are split at 2048 px and cleaned up: skin is solid and the hair colour is painted under the bangs.
+- **Live2D models from pictures.** A ready-to-play puppet for the SillyTavern Live2D extension, and a layered PSD to rig a full Live2D model in Cubism Editor. The puppet blinks, breathes, turns its head with depth, follows the cursor and plays the 28 expressions, gliding from one to the next, and reacts to touch (a boop on the nose, a pat on the head). Its mouth has separate teeth and tongue for 15 TTS visemes. Its hair, skirts and ribbons sway, and the bust and hips jiggle. You can drag hair, clothes and soft parts with the mouse or poke them. Layers are split at 2048 px and cleaned up: skin is solid and the hair colour is painted under the bangs. [Demo](#live2d-models).
 - **Swappable clothing for Live2D puppets.** Optional, and only for drawn adult characters. The body, the inner wear and the outer clothes become separate layers, and outfit switches change between them. The **undress chain** builds them from the picture itself: a vision model tags the clothes, each garment comes off in its own edit with every other pixel kept, and the puppet stays in the picture's pose.
 - **One intensity slider** sets how far each expression is pushed.
 - **Ready for sprites.** Files are named after their expression, and each run can save a labelled sprite sheet.
@@ -67,6 +67,19 @@ Turn on **Animate** and every expression also comes out as a looping animated We
 </table>
 
 The clips are made with Wan 2.2 image to video on ComfyUI and saved with a transparent background. The character reacts but never talks, so the loops read as an emotion display rather than speech. See [Animated sprites](docs/animated-sprites.md) for how it works and more examples.
+
+## Live2D models
+
+Emotica can also turn the picture into a Live2D puppet for SillyTavern. These clips are screen recordings of one in the browser player: it breathes, blinks and sways while idle, plays each emotion with its own reaction motion, follows the cursor with its eyes and head, and reacts to a boop on the nose, a poke on the cheek and a pat on the head.
+
+<table>
+  <tr>
+    <td width="50%" align="center"><img src=".github/readme/live2d/expressions.webp" alt="Live2D puppet playing joy, surprise, anger, embarrassment, sadness, amusement, fear, love and curiosity"><br><sub>Emotions</sub></td>
+    <td width="50%" align="center"><img src=".github/readme/live2d/touch.webp" alt="Live2D puppet following the cursor and reacting to a boop, a cheek poke and a head pat"><br><sub>Cursor follow and touch reactions</sub></td>
+  </tr>
+</table>
+
+See [Live2D model kits](docs/live2d.md) for how the puppet is made.
 
 ## Installation
 

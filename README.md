@@ -68,6 +68,19 @@ Turn on **Animate** and every expression also comes out as a looping animated We
 
 The clips are made with Wan 2.2 image to video on ComfyUI and saved with a transparent background. The character reacts but never talks, so the loops read as an emotion display rather than speech. See [Animated sprites](docs/animated-sprites.md) for how it works and more examples.
 
+## Live2D models
+
+Emotica can also turn the picture into a Live2D puppet for SillyTavern. These clips are screen recordings of one in the browser player: it breathes, blinks and sways while idle, plays each emotion with its own reaction motion, follows the cursor with its eyes and head, and reacts to a boop on the nose, a poke on the cheek and a pat on the head.
+
+<table>
+  <tr>
+    <td width="50%" align="center"><img src=".github/readme/live2d/expressions.webp" alt="Live2D puppet playing joy, surprise, anger, embarrassment, sadness, amusement, fear, love and curiosity"><br><sub>Emotions</sub></td>
+    <td width="50%" align="center"><img src=".github/readme/live2d/touch.webp" alt="Live2D puppet following the cursor and reacting to a boop, a cheek poke and a head pat"><br><sub>Cursor follow and touch reactions</sub></td>
+  </tr>
+</table>
+
+See [Live2D model kits](docs/live2d.md) for how the puppet is made.
+
 ## Installation
 
 Pick the setup you already use. They all share the same expression prompts and generation logic. Inside a WebUI, Emotica runs in-process, so the WebUI doesn't need `--api`.
